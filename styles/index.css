@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Estilo para conteúdo na frente do vídeo */
+.content {
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-text {
+  margin-bottom: 20px;
+}
+
+.content-btn {
+  padding: 1rem 3rem;
+  width: 30%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content-btn:hover {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+/* ------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.local-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 20px;
+}
+
+.local-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.local-item:nth-child(even) {
+  direction: rtl; /* Inverte a ordem para os itens pares */
+}
+
+.local-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.local-item img:hover {
+  transform: scale(1.02);
+}
+
+.local-content {
+  direction: ltr; /* Mantém a direção do texto normal */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.local-title {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.8em;
+}
+
+.local-desciption {
+  color: #34495e;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* Efeito de sobreposição para os itens pares */
+.local-item:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #3498db20, #e74c3c20);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .local-item {
+    grid-template-columns: 1fr;
+    direction: ltr !important;
+  }
+
+  .local-item img {
+    height: 200px;
+  }
+
+  .local-content {
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+.header ul li {
+  margin-left: 20px;
+}
+.header ul li a {
+  color: #000;
+  text-decoration: none;
+}
