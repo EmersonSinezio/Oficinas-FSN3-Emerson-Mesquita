@@ -4,7 +4,7 @@
 
 Uma calculadora moderna e responsiva construída com React, TypeScript e estilizada com Tailwind CSS. Esta aplicação oferece uma interface de usuário intuitiva e todas as operações básicas de uma calculadora.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)]([https://day-notes-client.vercel.app](https://oficinas-fsn-3-emerson-mesquita.vercel.app/))
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://oficinas-fsn-3-emerson-mesquita.vercel.app/)
 
 ## Funcionalidades
 
