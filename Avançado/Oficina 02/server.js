@@ -1,4 +1,3 @@
-// server.js
 const express = require("express");
 const alunoRoutes = require("./routes/alunos");
 const professorRoutes = require("./routes/professores");
